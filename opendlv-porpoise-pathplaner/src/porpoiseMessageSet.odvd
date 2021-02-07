@@ -1,0 +1,101 @@
+// Message set for the Porpoise platform
+// Version: 0.7
+// Authors: gabwal, sthern, aleast
+
+
+message opendlv.proxy.ImageReading [id = 1055] {
+  string fourcc [id = 1];
+  uint32 width [id = 2];
+  uint32 height [id = 3];
+  bytes data [id = 4];
+}
+
+message opendlv.logic.sensation.Orientation [id = 1118] {
+  float roll [id = 1];
+  float pitch [id = 2];
+  float yaw [id = 3];
+}
+
+
+// some new id and name?? - line 225 in prugw
+
+
+message opendlv.proxy.ControlBoat [id = 5321]
+{
+    float motorSB [id = 1];
+    float motorPS [id = 2];
+    float rudderSB [id = 3];
+    float rudderPS [id = 4];
+    float tunnelThruster [id = 5];
+    bool isValid [id = 6];
+}
+
+message opendlv.proxy.Str_message [id = 5322]
+{
+    string str_message [id = 1];
+    bool isValid [id = 2];
+}
+message opendlv.proxy.Waypoints [id = 5323]
+{
+  int32 list_index [id = 1];
+  float coord_x [id = 2];
+  float coord_y [id = 3];
+  int32 is_last_message [id = 4];
+}
+
+
+message opendlv.proxy.Pose [id = 5324]
+{
+    string utc_time [ id = 1 ];
+    double northing [ id = 2 ];
+    double easting [ id = 3 ];
+    int32 zone_number [ id = 4 ];
+    string zone_letter [ id = 5 ];
+    double roll [ id = 6 ];
+    double pitch [ id = 7 ];
+    double yaw [ id = 8 ];
+    double velocity [ id = 9 ];
+    bool is_valid [ id = 10 ];
+}
+
+message opendlv.proxy.Mission [id = 5325]
+{
+  float target_speed [id = 1];
+  int32 mission_type_controller [id = 2];
+  int32 mission_type_pathplanner [id = 3];
+}
+
+message opendlv.test.TestMessage [id = 5400] {
+    string greeting [ id = 1 ];
+}
+
+message opendlv.grove.GPSReading [id = 5402]  {
+    string utc_time [ id = 1 ];
+    string latitude [ id = 2 ];
+    string ns_indicator [ id = 3 ];
+    string longitude [ id = 4 ];
+    string ew_indicator [ id = 5 ];
+    string pos_fix_indicator [ id = 6 ];
+    string satellites_used [ id = 7 ];
+    string msl_altitude [ id = 8 ];
+}
+
+message opendlv.grove.WaterSensorReading [id = 5403]  {
+    bool is_water [ id = 1 ];
+}
+
+message opendlv.porpoise.targetlocation [id = 5404] {
+  float x [id = 1];
+  float y [id = 2];
+  float z [id = 3];
+}
+
+message opendlv.perception.Map [id = 5405] {
+  int32 list_index [id = 1]; // fisrt msg 0 and then itterate, for reciving to kown if message missed or put of order 
+  int32 object_type [id = 2]; // 1: target (sent in the order to be followed) 2: obstacle 
+  float coord_x [id = 3]; // local to right of boat
+  float coord_y [id = 4]; // local forward of boat 
+  int32 is_last_message [id = 5]; // 0: false 1: true
+}
+
+

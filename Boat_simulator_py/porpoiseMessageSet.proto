@@ -1,0 +1,185 @@
+
+//
+// THIS IS AN AUTO-GENERATED FILE. DO NOT MODIFY AS CHANGES MIGHT BE OVERWRITTEN!
+//
+
+
+// This line is only needed when using Google Protobuf 3.
+syntax = "proto2";
+
+
+// Message identifier: 1055.
+message opendlv_proxy_ImageReading {
+    optional string fourcc = 1;
+    optional uint32 width = 2;
+    optional uint32 height = 3;
+    optional bytes data = 4;
+}
+
+
+//
+// THIS IS AN AUTO-GENERATED FILE. DO NOT MODIFY AS CHANGES MIGHT BE OVERWRITTEN!
+//
+
+
+
+// Message identifier: 1118.
+message opendlv_logic_sensation_Orientation {
+    optional float roll = 1;
+    optional float pitch = 2;
+    optional float yaw = 3;
+}
+
+
+//
+// THIS IS AN AUTO-GENERATED FILE. DO NOT MODIFY AS CHANGES MIGHT BE OVERWRITTEN!
+//
+
+
+
+// Message identifier: 5321.
+message opendlv_proxy_ControlBoat {
+    optional float motorSB = 1;
+    optional float motorPS = 2;
+    optional float rudderSB = 3;
+    optional float rudderPS = 4;
+    optional float tunnelThruster = 5;
+    optional bool isValid = 6;
+}
+
+
+//
+// THIS IS AN AUTO-GENERATED FILE. DO NOT MODIFY AS CHANGES MIGHT BE OVERWRITTEN!
+//
+
+
+
+// Message identifier: 5322.
+message opendlv_proxy_Str_message {
+    optional string str_message = 1;
+    optional bool isValid = 2;
+}
+
+
+//
+// THIS IS AN AUTO-GENERATED FILE. DO NOT MODIFY AS CHANGES MIGHT BE OVERWRITTEN!
+//
+
+
+
+// Message identifier: 5323.
+message opendlv_proxy_Waypoints {
+    optional sint32 list_index = 1;
+    optional float coord_x = 2;
+    optional float coord_y = 3;
+    optional sint32 is_last_message = 4;
+}
+
+
+//
+// THIS IS AN AUTO-GENERATED FILE. DO NOT MODIFY AS CHANGES MIGHT BE OVERWRITTEN!
+//
+
+
+
+// Message identifier: 5324.
+message opendlv_proxy_Pose {
+    optional string utc_time = 1;
+    optional double northing = 2;
+    optional double easting = 3;
+    optional sint32 zone_number = 4;
+    optional string zone_letter = 5;
+    optional double roll = 6;
+    optional double pitch = 7;
+    optional double yaw = 8;
+    optional double velocity = 9;
+    optional bool is_valid = 10;
+}
+
+
+//
+// THIS IS AN AUTO-GENERATED FILE. DO NOT MODIFY AS CHANGES MIGHT BE OVERWRITTEN!
+//
+
+
+
+// Message identifier: 5325.
+message opendlv_proxy_Mission {
+    optional float target_speed = 1;
+    optional sint32 mission_type_controller = 2;
+    optional sint32 mission_type_pathplanner = 3;
+}
+
+
+//
+// THIS IS AN AUTO-GENERATED FILE. DO NOT MODIFY AS CHANGES MIGHT BE OVERWRITTEN!
+//
+
+
+
+// Message identifier: 5400.
+message opendlv_test_TestMessage {
+    optional string greeting = 1;
+}
+
+
+//
+// THIS IS AN AUTO-GENERATED FILE. DO NOT MODIFY AS CHANGES MIGHT BE OVERWRITTEN!
+//
+
+
+
+// Message identifier: 5402.
+message opendlv_grove_GPSReading {
+    optional string utc_time = 1;
+    optional string latitude = 2;
+    optional string ns_indicator = 3;
+    optional string longitude = 4;
+    optional string ew_indicator = 5;
+    optional string pos_fix_indicator = 6;
+    optional string satellites_used = 7;
+    optional string msl_altitude = 8;
+}
+
+
+//
+// THIS IS AN AUTO-GENERATED FILE. DO NOT MODIFY AS CHANGES MIGHT BE OVERWRITTEN!
+//
+
+
+
+// Message identifier: 5403.
+message opendlv_grove_WaterSensorReading {
+    optional bool is_water = 1;
+}
+
+
+//
+// THIS IS AN AUTO-GENERATED FILE. DO NOT MODIFY AS CHANGES MIGHT BE OVERWRITTEN!
+//
+
+
+
+// Message identifier: 5404.
+message opendlv_porpoise_targetlocation {
+    optional float x = 1;
+    optional float y = 2;
+    optional float z = 3;
+}
+
+
+//
+// THIS IS AN AUTO-GENERATED FILE. DO NOT MODIFY AS CHANGES MIGHT BE OVERWRITTEN!
+//
+
+
+
+// Message identifier: 5405.
+message opendlv_perception_Map {
+    optional sint32 list_index = 1;
+    optional sint32 object_type = 2;
+    optional float coord_x = 3;
+    optional float coord_y = 4;
+    optional sint32 is_last_message = 5;
+}
+
