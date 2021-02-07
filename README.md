@@ -1,0 +1,3 @@
+# Desing_project_SSY226
+
+Collection of some of my contributions to the project. This is mnore of a personal backup...
